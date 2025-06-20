@@ -1,0 +1,159 @@
+{
+  "settings": {
+    "name": "Shadow Exchange",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#110807"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [
+      {
+        "css": "'Inter Tight', sans-serif",
+        "name": "Inter Tight",
+        "url": "https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "favicon": "@PROJECT_PATH@/assets/images/shadow_1.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://shadow-xchange.github.io/sitemap.xml\n",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://shadow-xchange.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "ouocbny7y8",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13",
+    "screenshot": "screenshot.png"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Shadow Exchange™ | Home Official Site",
+        "meta_descr": "Shadow Exchange is a decentralized exchange that allows users to trade 32 cryptocurrencies on the Sonic Network. See the latest trading volume, price, spread, depth and trust.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://shadow.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/shadow.png\" alt=\"shadow exchange\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "uMiasftlSH",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#ffffff"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#110807\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#110807\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Shadow Exchange: A New Era in Decentralized Trading</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">The world of cryptocurrency and blockchain has witnessed rapid evolution over the last decade, leading to the emergence of various trading platforms and financial instruments. Among these innovations is the concept of Shadow Exchange, a decentralized trading platform designed to address the challenges faced by traditional exchanges and even some decentralized exchanges (DEXs). This article explores the fundamental principles of Shadow Exchange, its features, benefits, challenges, and its potential impact on the future of trading in the crypto space.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Understanding Shadow Exchange</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>What is Shadow Exchange?</b><br>Shadow Exchange is a decentralized trading platform that enables users to trade cryptocurrencies and digital assets directly with one another, without the need for intermediaries or centralized control. Unlike traditional exchanges, which often require users to deposit their assets into a central wallet, Shadow Exchange allows users to retain control of their private keys and funds throughout the trading process. This approach minimizes the risks associated with centralized exchanges, such as hacks and theft.<br><br><b>Key Components of Shadow Exchange</b><br><b>1.Decentralization:</b> At its core, Shadow Exchange operates on a decentralized model, utilizing smart contracts and blockchain technology to facilitate peer-to-peer trading. This eliminates the need for a central authority to manage transactions.<br><br><b>2.Order Matching:</b> Shadow Exchange employs a unique order-matching algorithm that connects buyers and sellers directly. This system ensures that trades are executed efficiently while maintaining transparency.<br><br><b>3.Privacy Features:</b> One of the defining characteristics of Shadow Exchange is its emphasis on user privacy. The platform often implements features that allow users to trade anonymously, protecting their identity and transaction history from prying eyes.<br><br><b>4.Multi-Asset Support:</b> Shadow Exchange supports a wide range of cryptocurrencies and digital assets, enabling users to trade various tokens seamlessly. This flexibility enhances the platform's appeal to a diverse user base.<br><br><b>5.Liquidity Pools:</b> To ensure sufficient liquidity for trading, Shadow Exchange may incorporate liquidity pools where users can contribute assets in exchange for rewards. This mechanism helps maintain efficient market conditions and reduces slippage.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Need for Shadow Exchange</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Challenges in Traditional Exchanges</b><br>Traditional cryptocurrency exchanges, while popular, are plagued by several issues:<br><br><b>1.Centralization Risks:</b> Centralized exchanges hold users' funds in their wallets, making them vulnerable to hacks and security breaches. High-profile exchange hacks have resulted in significant losses for users.<br><br><b>2.Lack of Privacy:</b> Users of centralized exchanges often have to provide personal information, compromising their privacy. This is a significant concern in an era where data breaches are common.<br><br><b>3.High Fees:</b> Centralized exchanges typically charge high trading fees, withdrawal fees, and deposit fees, which can deter users, especially small traders.<br><br><b>4.Regulatory Scrutiny:</b> Many centralized exchanges face regulatory challenges, leading to restrictions and limitations on trading practices. This can limit users' access to certain assets or trading pairs.<br><br><b>The Rise of Decentralized Exchanges</b><br>Decentralized exchanges (DEXs) emerged as a solution to some of these challenges. However, they also face limitations, such as:<br><br><b>1.User Experience:</b> Many DEXs have complicated interfaces that can be intimidating for new users. The lack of customer support can also be a barrier to adoption.<br><br><b>2.Liquidity Issues:</b> DEXs sometimes struggle with liquidity, leading to higher slippage and less favorable trading conditions.<br><br><b>3.Limited Asset Support:</b> Some DEXs only support specific tokens or assets, limiting users' trading options.<br><br>Shadow Exchange aims to combine the advantages of both centralized exchanges and DEXs while addressing their shortcomings.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Features of Shadow Exchange</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Peer-to-Peer Trading</b><br>Shadow Exchange facilitates direct peer-to-peer trading, allowing users to connect and trade without intermediaries. This model promotes transparency and reduces the risk of fraud.<br><br><b>2. Advanced Order Types</b><br>Shadow Exchange supports various order types, including market orders, limit orders, and stop-loss orders. This flexibility allows traders to execute strategies that suit their individual preferences.<br><br><b>3. Enhanced Privacy</b><br>With a focus on user privacy, Shadow Exchange often employs techniques such as zero-knowledge proofs and anonymous wallets. This ensures that users can trade without revealing their identities or transaction histories.<br><br><b>4. Cross-Chain Compatibility</b><br>Many Shadow Exchanges are designed to support cross-chain trading, enabling users to trade assets from different blockchains seamlessly. This interoperability enhances the platform's usability and appeal.<br><br><b>5. Yield Farming and Staking</b><br>To incentivize liquidity provision, Shadow Exchange may offer yield farming and staking opportunities. Users can earn rewards by contributing to liquidity pools, enhancing overall market liquidity.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Benefits of Shadow Exchange</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Increased Security</b><br>By removing the need for a central authority to hold users' funds, Shadow Exchange significantly enhances security. Users retain control of their private keys, reducing the risk of hacks and theft.<br><br><b>2. Greater Privacy</b><br>Shadow Exchange prioritizes user privacy, allowing traders to engage in transactions without revealing personal information. This anonymity can be particularly appealing to users concerned about data security.<br><br><b>3. Lower Fees</b><br>Without intermediaries, Shadow Exchange can offer lower trading fees compared to traditional exchanges. This cost-effectiveness can attract a broader range of users, from casual traders to institutional investors.<br><br><b>4. Enhanced Accessibility</b><br>The decentralized nature of Shadow Exchange makes it accessible to anyone with an internet connection. Users from regions with limited access to traditional banking services can participate in the global cryptocurrency market.<br><br><b>5. Community-Centric Approach</b><br>Shadow Exchange often emphasizes community involvement in decision-making processes. Users can participate in governance through token-based voting, ensuring that the platform evolves according to the needs of its users.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Use Cases for Shadow Exchange</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Retail Trading</b><br>Retail traders can leverage Shadow Exchange to trade cryptocurrencies without the risks associated with centralized platforms. The ability to trade anonymously and retain control of funds makes it an attractive option for individual investors.<br><br><b>2. Institutional Trading</b><br>Institutional investors can also benefit from Shadow Exchange by accessing a decentralized platform that offers security and lower fees. The privacy features may appeal to institutions looking to protect their trading strategies.<br><br><b>3. Cross-Border Transactions</b><br>In regions with unstable banking systems, Shadow Exchange can facilitate cross-border transactions without relying on traditional financial institutions. This capability can help individuals and businesses conduct international trade more efficiently.<br><br><b>4. NFT Trading</b><br>Shadow Exchange can support the trading of non-fungible tokens (NFTs), allowing users to buy, sell, and trade digital assets securely. This integration can contribute to the growing popularity of NFTs in the digital economy.<br><br><b>5. Decentralized Finance (DeFi) Applications</b><br>Shadow Exchange can serve as a foundational layer for various DeFi applications, enabling users to access lending, borrowing, and yield farming opportunities directly within the platform.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Challenges and Considerations</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Regulatory Compliance</b><br>As with any decentralized platform, Shadow Exchange must navigate the complexities of regulatory compliance. Different jurisdictions have varying regulations regarding cryptocurrencies and trading platforms, which can impact the platform's operations.<br><br><b>2. Liquidity Management</b><br>While Shadow Exchange aims to provide sufficient liquidity, managing liquidity pools effectively can be challenging. Ensuring that there are enough participants willing to trade is crucial for maintaining a healthy trading environment.<br><br><b>3. User Education</b><br>Despite its user-friendly design, Shadow Exchange must invest in educating users about the platform and its features. Providing resources, tutorials, and support can help onboard new users and enhance their trading experience.<br><br><b>4. Security Risks</b><br>While Shadow Exchange enhances security by eliminating central authorities, users are still responsible for safeguarding their private keys and assets. Security breaches can occur at various levels, including user negligence.<br><br><b>5. Market Volatility</b><br>The cryptocurrency market is known for its volatility, which can impact trading conditions on Shadow Exchange. Users must be prepared for rapid price fluctuations and develop strategies to manage risks effectively.<br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Future of Shadow Exchange</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Technological Advancements</b><br>As blockchain technology continues to evolve, Shadow Exchange will likely incorporate advanced features to enhance user experience. Innovations such as layer-2 solutions, improved smart contracts, and enhanced privacy protocols can contribute to the platform's growth.<br><br><b>2. Expanding Asset Support</b><br>To attract a broader user base, Shadow Exchange may expand its support for various cryptocurrencies and digital assets. This diversification can enhance trading opportunities and appeal to different investor segments.<br><br><b>3. Enhanced User Experience</b><br>Investing in user experience will be crucial for Shadow Exchange's success. Continuous improvements to the platform's interface, functionality, and support can help retain users and attract new participants.<br><br><b>4. Global Reach</b><br>Shadow Exchange has the potential to expand its reach globally, tapping into markets that have limited access to traditional financial systems. By promoting financial inclusion, the platform can empower individuals in underserved regions.<br><br><b>5. Integration with Traditional Finance</b><br>As the lines between traditional finance and decentralized finance blur, Shadow Exchange may explore partnerships with traditional financial institutions. Collaborations can enhance legitimacy and attract institutional investors to the platform.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Shadow Exchange represents a significant step forward in the evolution of decentralized trading platforms. By addressing the challenges faced by traditional exchanges and DEXs, it offers a secure, private, and user-centric solution for trading cryptocurrencies and digital assets. As the blockchain and cryptocurrency landscape continues to evolve, Shadow Exchange is well-positioned to play a crucial role in shaping the future of trading. Through ongoing innovation, community engagement, and a commitment to enhancing user experience, Shadow Exchange can pave the way for a more decentralized and inclusive financial ecosystem.<br></p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "uMiasuL77K",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
